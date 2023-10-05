@@ -5,10 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="app.js"></script>
+    <style>
+        .hide {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
     <h1>Todo List</h1>
+
+    <div>
+        <input type="text" id="inputs" placeholder="Enter Todo Elements">
+        <button id="addTodo" onclick="addTodo()">Add Todo </button>
+        <button id="UpdateTodo" onclick="UpdateTodo(event)" class="hide"> Update</button>
+        <button onclick="deleteAll()">Delete All </button>
+    </div>
+    <div>
+        <ol id="list">
+        </ol>
+    </div>
 </body>
 
 </html>
